@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Chatroom</title>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/custom.js"></script>
+
+
+    <link href="styles/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="nickWrap">
+        <p>Enter your username</p>
+        <p id="nickError"></p>
+        <form id="setNick">
+            <input size="35" id="nickname">
+            <select id="room">
+            </select>
+            <input type="submit">
+        </form>
+
+    </div>
+
+    <div id="contentWrap">
+        <div id="chatWrap">
+            <a href="" id="archive">Load previous 20 messages</a>
+            <div id="chat"></div>
+            <form id="send-message">
+                <input size="35" id="message">
+                <input type="submit">
+            </form>
+            <div id="users"></div>
+            <div id="nou"></div>
+        </div>
+
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>

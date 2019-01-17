@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Admin</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/adminscripts.js"></script>
+
+</head>
+
+<body>
+
+    <div id="roomspanel">
+
+        Room 1
+        <input type="submit" value="Public" name="submit" data-room="1" data-privacy="1" class="klikam">
+        <input type="submit" value="Private" name="submit" data-room="1" data-privacy="0" class="klikam">
+        <br> Room 2
+        <input type="submit" value="Public" data-room="2" name="submit" data-privacy="1" class="klikam">
+        <input type="submit" value="Private" data-room="2" data-privacy="0" class="klikam">
+        <br> Room 3
+        <input type="submit" value="Public" data-room="3" data-privacy="1" class="klikam">
+        <input type="submit" value="Private" data-room="3" data-privacy="0" class="klikam">
+        <br> Room 4
+        <input type="submit" value="Public" data-room="4" data-privacy="1" class="klikam">
+        <input type="submit" value="Private" data-room="4" data-privacy="0" class="klikam">
+        <br>
+
+
+    </div>
+
+
+    <br>
+    <br>
+    <div id="flood">
+        <b>Flood</b>
+        <br> Room 1
+        <input type="submit" value="On" name="submit" data-room="1" data-flood="1" class="flood">
+        <input type="submit" value="Off" name="submit" data-room="1" data-flood="0" class="flood">
+        <br> Room 2
+        <input type="submit" value="On" data-room="2" name="submit" data-flood="1" class="flood">
+        <input type="submit" value="Off" data-room="2" data-flood="0" class="flood">
+        <br> Room 3
+        <input type="submit" value="On" data-room="3" data-flood="1" class="flood">
+        <input type="submit" value="Off" data-room="3" data-flood="0" class="flood">
+        <br> Room 4
+        <input type="submit" value="On" data-room="4" data-flood="1" class="flood">
+        <input type="submit" value="Off" data-room="4" data-flood="0" class="flood">
+        <br>
+    </div>
+
+    <p>Amount of people in rooms:</p>
+    <div id="stats">
+    </div>
+
+</body>
+
+</html>
