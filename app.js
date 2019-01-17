@@ -6,10 +6,12 @@ const io = require('socket.io').listen(app.listen(port));
 const moment = require('moment');
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-    host    : '127.0.0.1',
-    user    : 'root',
-    password: 'root',
-    database: 'mydb'
+    host    : 'serwerkm.mysql.database.azure.com',
+    user    : 'adminkm@serwerkm',
+    password: 'zaq1@WSX',
+    database: 'mydb',
+        port: 3306,
+    insecureAuth: true
 });
 
 const exp = require('./express')(app, express, path, connection);
